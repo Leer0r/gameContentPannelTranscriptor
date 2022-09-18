@@ -1,0 +1,73 @@
+html,
+body{
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    .mainContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .pannelContainer{
+            width: 40%;
+            height: 40%;
+            background-color: cadetblue;
+            display: flex;
+            flex-flow: row nowrap;
+
+            .pannelNames {
+                flex: 1;
+                background-color: chocolate;
+                display: flex;
+                flex-flow: column nowrap;
+
+                .pannelName {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 1s background-color;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: darkcyan;
+                    }
+                }
+            }
+
+            .pannelContent{
+                flex: 4;
+                background-color: crimson;
+                display: flex;
+                flex-flow: row wrap;
+
+                .content{
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    height: 20%;
+                    display: flex;
+                    flex-flow: column nowrap;
+
+                    .optionName {
+                        flex: 1;
+                    }
+
+                    .optionContent {
+                        flex: 2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

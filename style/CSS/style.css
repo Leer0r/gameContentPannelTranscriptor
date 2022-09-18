@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html .mainContainer,
+body .mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html .mainContainer .pannelContainer,
+body .mainContainer .pannelContainer {
+  width: 40%;
+  height: 40%;
+  background-color: cadetblue;
+  display: flex;
+  flex-flow: row nowrap;
+}
+html .mainContainer .pannelContainer .pannelNames,
+body .mainContainer .pannelContainer .pannelNames {
+  flex: 1;
+  background-color: chocolate;
+  display: flex;
+  flex-flow: column nowrap;
+}
+html .mainContainer .pannelContainer .pannelNames .pannelName,
+body .mainContainer .pannelContainer .pannelNames .pannelName {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s background-color;
+  cursor: pointer;
+}
+html .mainContainer .pannelContainer .pannelNames .pannelName:hover,
+body .mainContainer .pannelContainer .pannelNames .pannelName:hover {
+  background-color: darkcyan;
+}
+html .mainContainer .pannelContainer .pannelContent,
+body .mainContainer .pannelContainer .pannelContent {
+  flex: 4;
+  background-color: crimson;
+  display: flex;
+  flex-flow: row wrap;
+}
+html .mainContainer .pannelContainer .pannelContent .content,
+body .mainContainer .pannelContainer .pannelContent .content {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 20%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+html .mainContainer .pannelContainer .pannelContent .content .optionName,
+body .mainContainer .pannelContainer .pannelContent .content .optionName {
+  flex: 1;
+}
+html .mainContainer .pannelContainer .pannelContent .content .optionContent,
+body .mainContainer .pannelContainer .pannelContent .content .optionContent {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
